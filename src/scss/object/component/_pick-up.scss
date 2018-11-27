@@ -1,0 +1,27 @@
+.c-pick-up {
+    flex: 1 1 30.0rem;
+
+    &__link {
+        margin: 2.0rem;
+        display: block;
+        color: inherit;
+
+        &:hover {
+            opacity: 0.8;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+
+    &__img {
+        padding-bottom: 68%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 0 8px gray;
+        border-radius: 1.0rem;
+        margin-bottom: 1.0rem;
+    }
+}

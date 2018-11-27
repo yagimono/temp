@@ -1,0 +1,15 @@
+// メディアクエリ
+@mixin min-screen($breakpoint) {
+
+    // 引数に設定された画面は倍加のスタイルを指定するメディアクエリ
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// 下マージン削除
+@mixin last-mb0() {
+    > :last-child {
+        margin-bottom: 0;
+    }
+}

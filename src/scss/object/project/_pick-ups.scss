@@ -1,0 +1,11 @@
+.p-pick-ups {
+    &__container {
+        max-width: $PAGE_MAX_WIDTH;
+        margin: 0 auto;
+    }
+
+    &__contents {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
