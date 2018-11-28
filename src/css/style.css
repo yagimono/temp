@@ -293,8 +293,6 @@ body {
 
 .c-title {
   display: block;
-  margin-left: 2.0rem;
-  margin-right: 2.0rem;
   border-bottom: solid 0.1rem currentColor;
   font-family: 'Montserrat', sans-serif; }
 
@@ -324,19 +322,74 @@ body {
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 8px gray;
-    border-radius: 1.0rem;
+    border-radius: 0.8rem;
     margin-bottom: 1.0rem; }
 
-.p-pick-ups__container {
+.c-category {
+  flex: 1 1 50%; }
+  @media screen and (min-width: 600px) {
+    .c-category {
+      flex: 1 1 25%; } }
+  .c-category__link {
+    margin: 1.0rem;
+    display: block;
+    color: inherit; }
+    .c-category__link:hover {
+      opacity: 0.8;
+      text-decoration: none;
+      color: inherit; }
+  .c-category__img {
+    padding-bottom: 56%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px gray;
+    border-radius: 0.6rem;
+    margin-bottom: 1.0rem; }
+
+.p-pick-ups {
+  margin-bottom: 2.0rem; }
+  @media screen and (min-width: 960px) {
+    .p-pick-ups {
+      margin-bottom: 4.0rem; } }
+  .p-pick-ups__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem; }
+    @media screen and (min-width: 960px) {
+      .p-pick-ups__container {
+        padding-left: 2.0rem;
+        padding-right: 2.0rem; } }
+  .p-pick-ups__contents {
+    display: flex;
+    flex-wrap: wrap; }
+  .p-pick-ups__title {
+    margin-left: 1.0rem;
+    margin-right: 1.0rem; }
+    @media screen and (min-width: 960px) {
+      .p-pick-ups__title {
+        margin-left: 2.0rem;
+        margin-right: 2.0rem; } }
+
+.p-categories__container {
   max-width: 1000px;
   margin: 0 auto;
   padding-left: 1.0rem;
   padding-right: 1.0rem; }
   @media screen and (min-width: 960px) {
-    .p-pick-ups__container {
-      padding-left: 2.0rem;
-      padding-right: 2.0rem; } }
+    .p-categories__container {
+      padding-left: 3.0rem;
+      padding-right: 3.0rem; } }
 
-.p-pick-ups__contents {
+.p-categories__contents {
   display: flex;
   flex-wrap: wrap; }
+
+.p-categories__title {
+  margin-left: 1.0rem;
+  margin-right: 1.0rem; }
+  @media screen and (min-width: 960px) {
+    .p-categories__title {
+      margin-bottom: 1.5rem; } }
