@@ -13,3 +13,15 @@
         margin-bottom: 0;
     }
 }
+
+// ベンダープレフィックス
+@mixin prefixes($property, $value) {
+
+    @each $prefix in -webkit-,
+    -moz-,
+    -ms-,
+    -o-,
+    '' {
+        #{$prefix}#{$property}: $value;
+    }
+}

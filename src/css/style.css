@@ -302,11 +302,17 @@ body {
   opacity: 0.8; }
 
 .c-pick-up {
-  flex: 1 1 30.0rem; }
+  flex: 1 1 50%; }
+  @media screen and (min-width: 600px) {
+    .c-pick-up {
+      flex: 1 1 calc(100% / 3); } }
   .c-pick-up__link {
-    margin: 2.0rem;
+    margin: 1.0rem;
     display: block;
     color: inherit; }
+    @media screen and (min-width: 960px) {
+      .c-pick-up__link {
+        margin: 2.0rem; } }
     .c-pick-up__link:hover {
       opacity: 0.8;
       text-decoration: none;
@@ -323,7 +329,13 @@ body {
 
 .p-pick-ups__container {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem; }
+  @media screen and (min-width: 960px) {
+    .p-pick-ups__container {
+      padding-left: 2.0rem;
+      padding-right: 2.0rem; } }
 
 .p-pick-ups__contents {
   display: flex;

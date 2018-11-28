@@ -2,6 +2,13 @@
     &__container {
         max-width: $PAGE_MAX_WIDTH;
         margin: 0 auto;
+        padding-left: 1.0rem;
+        padding-right: 1.0rem;
+
+        @include min-screen($BREAK_POINT_PC) {
+            padding-left: 2.0rem;
+            padding-right: 2.0rem;
+        }
     }
 
     &__contents {

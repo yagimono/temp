@@ -1,10 +1,18 @@
 .c-pick-up {
-    flex: 1 1 30.0rem;
+    flex: 1 1 50%;
+
+    @include min-screen($BREAK_POINT_TB) {
+        flex: 1 1 calc(100% / 3);
+    }
 
     &__link {
-        margin: 2.0rem;
+        margin: 1.0rem;
         display: block;
         color: inherit;
+
+        @include min-screen($BREAK_POINT_PC) {
+            margin: 2.0rem;
+        }
 
         &:hover {
             opacity: 0.8;
