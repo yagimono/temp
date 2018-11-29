@@ -6,9 +6,13 @@
     }
 
     &__link {
-        margin: 1.0rem;
+        margin: 0.5rem;
         display: block;
         color: inherit;
+
+        @include min-screen($BREAK_POINT_TB) {
+            margin: 1.0rem;
+        }
 
         @include min-screen($BREAK_POINT_PC) {
             margin: 2.0rem;
@@ -21,7 +25,6 @@
         }
     }
 
-
     &__img {
         padding-bottom: 68%;
         width: 100%;
@@ -30,6 +33,18 @@
         background-size: cover;
         box-shadow: 0 0 8px gray;
         border-radius: 0.8rem;
-        margin-bottom: 1.0rem;
+        margin-bottom: 0.5rem;
+
+        @include min-screen($BREAK_POINT_TB) {
+            margin-bottom: 1.0rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 0.5rem;
+
+        @include min-screen($BREAK_POINT_TB) {
+            margin-bottom: 1.0rem;
+        }
     }
 }

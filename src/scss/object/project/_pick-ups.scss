@@ -8,8 +8,13 @@
     &__container {
         max-width: $PAGE_MAX_WIDTH;
         margin: 0 auto;
-        padding-left: 1.0rem;
-        padding-right: 1.0rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        @include min-screen($BREAK_POINT_TB) {
+            padding-left: 1.0rem;
+            padding-right: 1.0rem;
+        }
 
         @include min-screen($BREAK_POINT_PC) {
             padding-left: 2.0rem;
@@ -23,8 +28,13 @@
     }
 
     &__title {
-        margin-left: 1.0rem;
-        margin-right: 1.0rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        @include min-screen($BREAK_POINT_TB) {
+            margin-left: 1.0rem;
+            margin-right: 1.0rem;
+        }
 
         @include min-screen($BREAK_POINT_PC) {
             margin-left: 2.0rem;
