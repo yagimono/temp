@@ -1,10 +1,4 @@
-.p-categories {
-    margin-bottom: 2.0rem;
-
-    @include min-screen($BREAK_POINT_PC) {
-        margin-bottom: 4.0rem;
-    }
-
+.p-informations {
     &__container {
         max-width: $PAGE_MAX_WIDTH;
         margin: 0 auto;
