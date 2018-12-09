@@ -1,0 +1,30 @@
+.p-pair {
+    &__container {
+        max-width: $PAGE_MAX_WIDTH;
+        margin: 0 auto;
+        padding-left: 1.0rem;
+        padding-right: 1.0rem;
+
+        @include min-screen($BREAK_POINT_TB) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include min-screen($BREAK_POINT_PC) {
+            padding-left: 2.0rem;
+            padding-right: 2.0rem;
+        }
+    }
+
+    &__left {
+        @include min-screen($BREAK_POINT_TB) {
+            flex: 1 1 50%;
+        }
+    }
+
+    &__right {
+        @include min-screen($BREAK_POINT_TB) {
+            flex: 1 1 50%;
+        }
+    }
+}

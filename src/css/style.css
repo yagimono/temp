@@ -373,6 +373,26 @@ body {
     background-color: #212529;
     padding: 0.1rem 0.5rem; }
 
+.c-youtube {
+  flex: 1 1 50%; }
+  .c-youtube__link {
+    margin: 1.0rem;
+    display: block;
+    color: inherit; }
+    .c-youtube__link:hover {
+      opacity: 0.8;
+      text-decoration: none;
+      color: inherit; }
+  .c-youtube__img {
+    padding-bottom: 56%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 8px gray;
+    border-radius: 0.6rem;
+    margin-bottom: 1.0rem; }
+
 .p-pick-ups {
   margin-bottom: 2.0rem; }
   @media screen and (min-width: 960px) {
@@ -422,23 +442,62 @@ body {
       .p-categories__title {
         margin-bottom: 1.5rem; } }
 
-.p-informations__container {
+.p-informations {
+  margin-bottom: 2.0rem; }
+  @media screen and (min-width: 960px) {
+    .p-informations {
+      margin-bottom: 4.0rem; } }
+  @media screen and (min-width: 960px) {
+    .p-informations__container {
+      padding-left: 1.0rem;
+      padding-right: 1.0rem; } }
+  .p-informations__contents {
+    display: flex;
+    flex-wrap: wrap; }
+  .p-informations__title {
+    margin-left: 1.0rem;
+    margin-right: 1.0rem; }
+    @media screen and (min-width: 960px) {
+      .p-informations__title {
+        margin-bottom: 1.5rem; } }
+
+.p-youtubes {
+  margin-bottom: 2.0rem; }
+  @media screen and (min-width: 960px) {
+    .p-youtubes {
+      margin-bottom: 4.0rem; } }
+  @media screen and (min-width: 960px) {
+    .p-youtubes__container {
+      padding-left: 1.0rem;
+      padding-right: 1.0rem; } }
+  .p-youtubes__contents {
+    display: flex;
+    flex-wrap: wrap; }
+  .p-youtubes__title {
+    margin-left: 1.0rem;
+    margin-right: 1.0rem; }
+    @media screen and (min-width: 960px) {
+      .p-youtubes__title {
+        margin-bottom: 1.5rem; } }
+
+.p-pair__container {
   max-width: 1000px;
   margin: 0 auto;
   padding-left: 1.0rem;
   padding-right: 1.0rem; }
+  @media screen and (min-width: 600px) {
+    .p-pair__container {
+      display: flex;
+      flex-wrap: wrap; } }
   @media screen and (min-width: 960px) {
-    .p-informations__container {
-      padding-left: 3.0rem;
-      padding-right: 3.0rem; } }
+    .p-pair__container {
+      padding-left: 2.0rem;
+      padding-right: 2.0rem; } }
 
-.p-informations__contents {
-  display: flex;
-  flex-wrap: wrap; }
+@media screen and (min-width: 600px) {
+  .p-pair__left {
+    flex: 1 1 50%; } }
 
-.p-informations__title {
-  margin-left: 1.0rem;
-  margin-right: 1.0rem; }
-  @media screen and (min-width: 960px) {
-    .p-informations__title {
-      margin-bottom: 1.5rem; } }
+@media screen and (min-width: 600px) {
+  .p-pair__right {
+    flex: 1 1 50%; } }

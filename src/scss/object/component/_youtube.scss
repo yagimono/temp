@@ -1,0 +1,26 @@
+.c-youtube {
+    flex: 1 1 50%;
+
+    &__link {
+        margin: 1.0rem;
+        display: block;
+        color: inherit;
+
+        &:hover {
+            opacity: 0.8;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__img {
+        padding-bottom: 56%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 0 8px gray;
+        border-radius: 0.6rem;
+        margin-bottom: 1.0rem;
+    }
+}
